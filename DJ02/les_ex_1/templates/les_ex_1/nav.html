@@ -1,22 +1,24 @@
-<div class="d-flex flex-wrap gap-2 mb-3">
-    <!-- Главная кнопка выделена -->
-    <a href="{% url 'home' %}" class="btn btn-primary px-3">
+<div class="d-grid gap-2">
+    <a href="{% url 'home' %}"
+       class="btn {% if request.resolver_match.url_name == 'home' %}btn-primary{% else %}btn-outline-secondary{% endif %}">
         <i class="bi bi-house-door me-1"></i>
         Главная
     </a>
 
-    <!-- Остальные страницы с разными цветами и иконками -->
-    <a href="{% url 'page2' %}" class="btn btn-outline-success px-3">
+    <a href="{% url 'page2' %}"
+       class="btn {% if request.resolver_match.url_name == 'page2' %}btn-success{% else %}btn-outline-success{% endif %}">
         <i class="bi bi-file-earmark me-1"></i>
         Страница 2
     </a>
 
-    <a href="{% url 'page3' %}" class="btn btn-outline-info px-3">
+    <a href="{% url 'page3' %}"
+       class="btn {% if request.resolver_match.url_name == 'page3' %}btn-info{% else %}btn-outline-info{% endif %}">
         <i class="bi bi-file-earmark-plus me-1"></i>
         Страница 3
     </a>
 
-    <a href="{% url 'page4' %}" class="btn btn-outline-warning px-3">
+    <a href="{% url 'page4' %}"
+       class="btn {% if request.resolver_match.url_name == 'page4' %}btn-warning{% else %}btn-outline-warning{% endif %}">
         <i class="bi bi-file-earmark-ruled me-1"></i>
         Страница 4
     </a>
