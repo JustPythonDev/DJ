@@ -5,10 +5,10 @@
 **DJ01_les_ex_1**
 
 ### создать новый проект<br>
-django-admin startproject DJ02_les_ex
+django-admin startproject DJ02
 ### создать новое app
-cd DJ02_les_ex <br>
-python manage.py startapp ex_1
+cd DJ02 <br>
+python manage.py startapp les_ex_1
 ### запуск проекта (из папки проекта)
 python manage.py runserver 
 
@@ -18,7 +18,16 @@ python manage.py runserver
 
 
 # DJ02. Создание приложения и работа с моделями
-поработали с шаблонизатором Jinja;
-оформили сайт с помощью Bootstrap;
-отобразили html-шаблоны. <br>
-**DJ02_les_ex**
+* маршрутизации, отображения и шаблонов
+* render
+* поработали с шаблонизатором Jinja;
+* Статические файлы
+* оформили сайт с помощью Bootstrap;
+* отобразили html-шаблоны. 
+* context<br>
+
+**DJ02.les_ex_1**
+
+## ДЗ
+Создайте отдельные файлы для меню и подвала сайта, подключив их к основному шаблону через include.
+Используйте шаблон для создания 4 страниц сайта, стилизованных с помощью Bootstrap.

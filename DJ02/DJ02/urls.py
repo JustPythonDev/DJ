@@ -1,5 +1,5 @@
 """
-URL configuration for DJ02_les_ex project.
+URL configuration for DJ02 project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.2/topics/http/urls/
@@ -21,5 +21,5 @@ from django.conf.urls.static import static
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', include('ex_1.urls'))
+    path('', include('les_ex_1.urls'))
 ] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
