@@ -1,0 +1,19 @@
+<div class="d-grid gap-2">
+    <a href="{% url 'home' %}"
+       class="btn {% if request.resolver_match.url_name == 'home' %}btn-primary{% else %}btn-outline-secondary{% endif %}">
+        <i class="bi bi-house-door me-1"></i>
+        Главная
+    </a>
+
+    <a href="{% url 'page2' %}"
+       class="btn {% if request.resolver_match.url_name == 'page2' %}btn-success{% else %}btn-outline-success{% endif %}">
+        <i class="bi bi-file-earmark me-1"></i>
+        Страница 2
+    </a>
+
+    <a href="news"
+       class="btn {% if request.resolver_match.url_name == 'page3' %}btn-info{% else %}btn-outline-info{% endif %}">
+        <i class="bi bi-file-earmark-plus me-1"></i>
+        НОВОСТИ
+    </a>
+</div>
