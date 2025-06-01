@@ -38,6 +38,15 @@ python manage.py runserver
 * создали ещё одно приложение в Django-проекте;
 * разработали базу данных и попробовали работать с ней;
 * научились работать с панелью администратора.
+* 
+после прописывания полей таблицы в models, создаем таблицу:
+python manage.py makemigrations
+python manage.py migrate    
+
+панель админа - созание пля
+python manage.py createsuperuser
+user: yuev
+password: Pass12345
 
 **DJ03.les_ex_1**
 

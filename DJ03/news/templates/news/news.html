@@ -5,6 +5,15 @@
 {% endblock %}
 
 {% block content %}
-    <h2 class="mb-4">ЗДЕСЬ СКОРО БУДУТ НОВОСТИ</h2>
+    <h2 class="mb-4">Наши новости</h2>
 
+    {% for new_item in news %}
+        <div>
+            <h3> {{ new_item.title }} </h3>
+            <h5> {{ new_item.short_description }} </h5>
+            <p> {{ new_item.content }} </p>
+            <p> Добавлено:  {{ new_item.date_posted }} </p>
+            <p> Автор: {{ new_item.author }} </p>
+        </div>
+    {% endfor %}
 {% endblock %}
